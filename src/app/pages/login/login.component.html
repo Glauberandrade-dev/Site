@@ -1,0 +1,24 @@
+<div class="login-page">
+  <div class="login-card">
+    <h1 class="abc">Login</h1>
+
+    <p class="informacao">Digite seu CPF para acessar sua conta</p>
+    <label for="email">CPF:</label>
+  <input class="input-simples"
+     type="text"
+     id="email"
+     (keyup)="onKeyUp($event)"
+    >
+    <label for="senha">Senha:</label>
+  <input class="input-simples"
+     type="password"
+     id="senha"
+     (keyup)="onKeyUp($event)"
+    >
+    <button class="input-submeter"
+     [disabled]="botaoDesabilitado"
+     (click)="onBotaoClicado()">
+  {{ textoBotao }}
+</button>
+</div>
+</div>

@@ -1,0 +1,71 @@
+.abc {
+  color: #1A2733;
+  font: 24px "72" ,Arial, Helvetica, sans-serif;
+}
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 40px 16px;
+}
+.login-card {
+  width: 100%;
+  max-width: 465px;
+  height: 500px ;
+  background: #fff;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.login-card h1{
+  margin: 0 0 24px;
+  font-size: 28px;
+}
+.login-card label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+.input-simples, .input-submeter {
+
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+/*Estilo para o Botão*/
+.input-submeter:disabled {
+  background-color: #007bff;
+  cursor: not-allowed   ;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.informacao {
+  font-size: 10px;
+  font-family: Arial, Helvetica, serif;
+  color: #333;
+}
+.mensagem {
+  width: 100%;
+  margin: 16px auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
