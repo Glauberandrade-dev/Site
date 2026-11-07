@@ -8,15 +8,15 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  nome: string = '';
-  mensagem: string = ''; //Mensagem exibida após o clique do usuário
+  cpf: string = '';
+  senha: string = ''; //Mensagem exibida após o clique do usuário
   botaoDesabilitado: boolean = true;
   textoBotao: string = 'Entrar';
 
-  onKeyUp(event: KeyboardEvent): void {
+  onKeyUp(campo: 'cpf' | 'senha', event: KeyboardEvent): void {
     const input = event.target as HTMLInputElement;
-    this.nome = input.value.trim();
-    this.botaoDesabilitado = this.nome.length === 0;
+    this[campo] = input.value.trim();
+    this.botaoDesabilitado = this.cpf.length === 0;
   }
 
  onBotaoClicado(): void {

@@ -29,7 +29,7 @@
   transition: color 0.3s;
 }
 .navbar-item a:hover {
-  color: #f0a500;
+  color: #004B87;
 }
 .active {
   font-weight: bold;

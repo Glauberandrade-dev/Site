@@ -1,20 +1,21 @@
 <div class="login-page">
   <div class="login-card">
-    <h1 class="abc">Login</h1>
+    <h1 class="abc">FAÇA SEU LOGIN</h1>
 
     <p class="informacao">Digite seu CPF para acessar sua conta</p>
-    <label for="email">CPF:</label>
+
   <input class="input-simples"
-     type="text"
-     id="email"
-     (keyup)="onKeyUp($event)"
-    >
-    <label for="senha">Senha:</label>
+     placeholder="CPF"
+     type="number"
+     id="cpf"
+     (keyup)="onKeyUp('cpf',$event)">
+
   <input class="input-simples"
+     placeholder="SENHA"
      type="password"
      id="senha"
-     (keyup)="onKeyUp($event)"
-    >
+     (keyup)="onKeyUp('senha',$event)">
+     
     <button class="input-submeter"
      [disabled]="botaoDesabilitado"
      (click)="onBotaoClicado()">

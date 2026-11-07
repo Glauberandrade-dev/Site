@@ -1,6 +1,16 @@
+body {
+  margin: 0;
+  background-image: url('/Site/src/assets/imagem-back.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
 .abc {
-  color: #1A2733;
-  font: 24px "72" ,Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #fff;
+  font: 18px "70" ,Arial, Helvetica, sans-serif;
 }
 .login-page {
   display: flex;
@@ -13,7 +23,7 @@
   width: 100%;
   max-width: 465px;
   height: 500px ;
-  background: #fff;
+  background: #BEC293;
   padding: 100px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -29,7 +39,6 @@
   font-size: 14px;
 }
 .input-simples, .input-submeter {
-
   width: 100%;
   box-sizing: border-box;
   padding: 8px;
@@ -38,25 +47,31 @@
   border-radius: 4px;
   margin-bottom: 20px;
 }
-/*Estilo para o Botão*/
-.input-submeter:disabled {
-  background-color: #007bff;
-  cursor: not-allowed   ;
+.input-submeter {
   padding: 10px;
   font-size: 16px;
   text-align: center;
   display: block;
   color: #fff;
-  background-color: #007bff;
+  background-color: #999D6F;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin: 0 auto;
 }
+.input-submeter:hover:not(:disabled){
+  background-color: #5A5D37;
+}
+/*Estilo para o Botão*/
+.input-submeter:disabled {
+  background-color: #999D6F;
+  cursor: not-allowed   ;
+
+}
 .informacao {
   font-size: 10px;
   font-family: Arial, Helvetica, serif;
-  color: #333;
+  color: #fff;
 }
 .mensagem {
   width: 100%;
