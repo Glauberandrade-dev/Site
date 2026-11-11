@@ -1,25 +1,42 @@
 <div class="login-page">
-  <div class="login-card">
-    <h1 class="abc">FAÇA SEU LOGIN</h1>
+  <form class="login-card" (submit)="$event.preventDefault(); onBotaoClicado()">
+    <h1 class="login-titulo">FAÇA SEU LOGIN</h1>
+    <p class="login-subtitulo">Digite seu CPF para acessar sua conta</p>
 
-    <p class="informacao">Digite seu CPF para acessar sua conta</p>
+    <div class="campo">
+      <label for="cpf">CPF</label>
+      <input
+        class="input-simples"
+        id="cpf"
+        name="cpf"
+        type="text"
+        inputmode="numeric"
+        maxlength="11"
+        placeholder="Somente números"
+        autocomplete="username"
+        (keyup)="onKeyUp('cpf', $event)"
+      >
+    </div>
 
-  <input class="input-simples"
-     placeholder="CPF"
-     type="number"
-     id="cpf"
-     (keyup)="onKeyUp('cpf',$event)">
+    <div class="campo">
+      <label for="senha">Senha</label>
+      <input
+        class="input-simples"
+        id="senha"
+        name="senha"
+        type="password"
+        placeholder="Digite sua senha"
+        autocomplete="current-password"
+        (keyup)="onKeyUp('senha', $event)"
+      >
+    </div>
 
-  <input class="input-simples"
-     placeholder="SENHA"
-     type="password"
-     id="senha"
-     (keyup)="onKeyUp('senha',$event)">
-     
-    <button class="input-submeter"
-     [disabled]="botaoDesabilitado"
-     (click)="onBotaoClicado()">
-  {{ textoBotao }}
-</button>
-</div>
+    <button
+      class="botao-login"
+      type="submit"
+      [disabled]="botaoDesabilitado"
+    >
+      {{ textoBotao }}
+    </button>
+  </form>
 </div>
