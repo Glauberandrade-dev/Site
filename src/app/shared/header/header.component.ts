@@ -9,11 +9,15 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   exibirLogo:boolean = true;
+
+
   itensMenu = [
-    { label: 'Página Inicial', link: ''},
-    { label: 'Sobre Nós', link: '' },
-    { label: 'Carrinho', link: '' },
-    { label: 'Login e Cadastro', link: '/login' },
+    { label: 'PÁGINA PRINCIPAL', link: '/menu'},
+    { label: 'ADMNISTRAÇÃO', link: '/incluir' },
+    { label: 'SOBRE NÓS', link: '/sobre' },
+    { label: 'CARRINHO', link: '/carrinho' },
+    { label: 'LOGIN E CADASTRO', link: '/login' },
+ ];
 
- ] }
-
+}
+1
